@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Abel', sans-serif;
+    height:100%;
+    color: #173e43;
+}
+
+body {
+    height:100%;
+    font-size:1.5rem;
+}
+
+ul {
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    display:inline;
+}
+
+.container {
+    padding: .5rem;
+}
+
+.list-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.9rem;
+}
+
+.list {
+    margin-bottom: 1.5rem;
+}
+
+.name {
+    margin: 0;
+    margin-bottom:1.5rem;
+    font-size:4rem;
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+    background: linear-gradient(-45deg, #98dafc 25%, #312c32 25%, #312c32 50%, #98dafc 50%, #98dafc 75%, #312c32 75%, #312c32);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 20px 20px;
+    background-position: 0 0;
+    -webkit-animation: stripes 1s linear infinite;
+    animation: stripes 1s linear infinite;
+}
+
+@-webkit-keyframes stripes {
+  100% {
+    background-position: 20px 0, 20px 0, 20px 0;
+  }
+}
+
+@keyframes stripes {
+  100% {
+    background-position: 20px 0, 20px 0, 20px 0;
+  }
+}
+.icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    margin-top:3rem;
+    height: 2rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    margin-bottom: 1.5rem;
+    cursor:pointer;
+}
+
+@media all and (min-width: 736px) {
+    .container {
+        max-width: 45rem;
+        margin:auto;
+        margin-top:5rem;
+    }
+}
